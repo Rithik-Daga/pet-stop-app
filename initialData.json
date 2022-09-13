@@ -3,7 +3,7 @@
     "model": "auth.user",
     "fields": {
         "password": "pbkdf2_sha256$320000$2KGz2wKSLAOMTuxHBD6q2m$noAtf4XpDUOWGrDro7YAn+1CdZMm4KF20ixnJOsc6GI=",
-        "last_login": "2022-09-12T11:27:11.704Z",
+        "last_login": "2022-09-13T06:16:21.727Z",
         "is_superuser": true,
         "username": "rdaga",
         "first_name": "Rithik",
@@ -124,6 +124,14 @@
     "fields": {
         "session_data": ".eJxVjDsOwjAQBe_iGln-xR9Kes4Q7Xq9OIAcKU4qxN0hUgpo38y8lxhhW-u49bKME4mz0OL0uyHkR2k7oDu02yzz3NZlQrkr8qBdXmcqz8vh_h1U6PVbI1nvdcbElPJgokNgpQYk9tGZXJBZpcIheosRrBu00UEFSzGx05DE-wP-7DgQ:1oX1Vn:07esAoS3F6NDMJ3DxprCJ_Aq88RraIP6oQSwUcajKJI",
         "expire_date": "2022-09-24T14:31:11.947Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "58e00415ncliouh3e4yw3og5iisyfp83",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2pBhArS4dO8ZCMMMUjU0Ke3KeHdt0oVu_3vvv1RM21rj1mWJE6uzMur0u1HKD2k74Htqt1nnua3LRHpX9EG7vs4sz8vh_h3U1Ou3JkuA3oM1aAGEKDhXrKPAw2gYCjpBgTJk9IwFinc8CjMETxJQgnp_AM0SN9I:1oXzDZ:rW_hdnNjK8wKIotnLZ_fSRXeAcjEnpZRDKXzOsuo6Ts",
+        "expire_date": "2022-09-27T06:16:21.737Z"
     }
 },
 {
@@ -282,7 +290,7 @@
             "rdaga"
         ],
         "post": "ff385867-9f0e-46ff-a833-7c58e08c7ac1",
-        "liked": "0"
+        "liked": false
     }
 },
 {
@@ -293,46 +301,20 @@
             "rdaga"
         ],
         "post": "9271e81c-ae8f-47dd-91cf-9e02f979c41d",
-        "liked": "0"
+        "liked": false
     }
 },
 {
     "model": "community.comments",
-    "pk": 1,
-    "fields": {
-        "user": [
-            "rdaga"
-        ],
-        "post": "ff385867-9f0e-46ff-a833-7c58e08c7ac1",
-        "user_comment": "Hello",
-        "like_count": 0,
-        "time_commented": "2022-09-12T10:20:39.667Z"
-    }
-},
-{
-    "model": "community.comments",
-    "pk": 3,
-    "fields": {
-        "user": [
-            "rdaga"
-        ],
-        "post": "9271e81c-ae8f-47dd-91cf-9e02f979c41d",
-        "user_comment": "cute bitches",
-        "like_count": 0,
-        "time_commented": "2022-09-12T10:24:16.955Z"
-    }
-},
-{
-    "model": "community.comments",
-    "pk": 4,
+    "pk": 5,
     "fields": {
         "user": [
             "jatin"
         ],
-        "post": "ff385867-9f0e-46ff-a833-7c58e08c7ac1",
-        "user_comment": "Bitches be bitchin!!",
+        "post": "9271e81c-ae8f-47dd-91cf-9e02f979c41d",
+        "user_comment": "Bitches be bitchin...",
         "like_count": 0,
-        "time_commented": "2022-09-12T11:20:33.110Z"
+        "time_commented": "2022-09-13T06:17:04.662Z"
     }
 },
 {
@@ -927,6 +909,78 @@
         "object_repr": "jatin",
         "action_flag": 2,
         "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 34,
+    "fields": {
+        "action_time": "2022-09-13T06:16:43.045Z",
+        "user": [
+            "rdaga"
+        ],
+        "content_type": [
+            "community",
+            "comments"
+        ],
+        "object_id": "4",
+        "object_repr": "Bitches be bitchin!!",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 35,
+    "fields": {
+        "action_time": "2022-09-13T06:16:43.063Z",
+        "user": [
+            "rdaga"
+        ],
+        "content_type": [
+            "community",
+            "comments"
+        ],
+        "object_id": "3",
+        "object_repr": "cute bitches",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 36,
+    "fields": {
+        "action_time": "2022-09-13T06:16:43.086Z",
+        "user": [
+            "rdaga"
+        ],
+        "content_type": [
+            "community",
+            "comments"
+        ],
+        "object_id": "1",
+        "object_repr": "Hello",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 37,
+    "fields": {
+        "action_time": "2022-09-13T06:17:04.682Z",
+        "user": [
+            "rdaga"
+        ],
+        "content_type": [
+            "community",
+            "comments"
+        ],
+        "object_id": "5",
+        "object_repr": "Bitches be bitchin...",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
     }
 }
 ]
