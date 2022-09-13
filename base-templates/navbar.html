@@ -1,0 +1,53 @@
+{% load static %}
+
+<nav>
+    {% if request.user.is_authenticated %}
+    <div id="user-profile">
+        <img src='{{request.user.profile.profile_image.url}}'
+             alt="profile-image" class="profile-image">
+    </div>
+    {% endif %}
+    <ul id="nav-items">
+        <li class="nav-link">
+            <a href="/">
+                <img src='{% static "images/paws.jpg" %}' alt=""
+                     class="nav-image" />
+            </a>
+        </li>
+        <li class="nav-link">
+            <a href="/">
+                <img src='{% static "images/paws.jpg" %}' alt=""
+                     class="nav-image" />
+            </a>
+        </li>
+        <li class="nav-link">
+            <a href="/">
+                <img src='{% static "images/paws.jpg" %}' alt=""
+                     class="nav-image" />
+            </a>
+        </li>
+        <li class="nav-link">
+            <a href="/">
+                <img src='{% static "images/paws.jpg" %}' alt=""
+                     class="nav-image" />
+            </a>
+        </li>
+        <li class="nav-link">
+            <a href="/">
+                <img src='{% static "images/paws.jpg" %}' alt=""
+                     class="nav-image" />
+            </a>
+        </li>
+    </ul>
+    <div class="add-post">
+        <button class="add-post-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" class="action-icon"
+                 width="28" height="28" fill="currentColor" class="bi bi-plus"
+                 viewBox="0 0 16 16">
+                <path
+                      d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+            </svg>
+            <h4>Add post</h4>
+        </button>
+    </div>
+</nav>

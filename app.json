@@ -1,0 +1,21 @@
+{
+    "name": "t-blooger",
+    "description": "A blogging website using django",
+    "image": "heroku/python",
+    "repository": "https://github.com/Rithik-Daga/t-blogger",
+    "keywords": ["python", "django" ],
+    "env": {
+      "SECRET_KEY": {
+        "description": "The secret key for the Django application.",
+        "generator": "secret"
+      }
+    },
+    "environments": {
+      "test": {
+        "scripts": {
+          "test-setup": "python manage.py collectstatic --noinput",
+          "test": "python manage.py test"
+        }
+      }
+    }
+  }

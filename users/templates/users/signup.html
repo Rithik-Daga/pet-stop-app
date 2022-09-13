@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}
+signup | petstop
+{% endblock %}
+
+{% block css_link %}
+<link rel="stylesheet" href='{% static "styles/signin.css" %}'>
+{% endblock %}
+
+{% block content %}
+
+<h1>Sign up</h1>
+<form method="post">
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" value="sign up" />
+</form>
+
+{% endblock %}

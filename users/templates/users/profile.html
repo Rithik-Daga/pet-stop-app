@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}
+profile | petstop
+{% endblock %}
+
+
+{% block content %}
+
+<h1>{{user_profile}}</h1>
+<img src="{{user_profile.profile_image.url}}" alt="profile image">
+<h4>{{user_profile.bio}}</h4>
+
+<h5>Pets accounts: </h5>
+<div>
+    {% for pet in user_profile.pets.all %}
+    <p>-->{{pet.username}}</p>
+    {% endfor %}
+</div>
+
+{% endblock %}

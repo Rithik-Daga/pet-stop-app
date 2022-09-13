@@ -1,0 +1,318 @@
+
+#feed {
+    height: 100%;
+    margin: 0 2rem 2rem 2rem;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+
+#feed::-webkit-scrollbar {
+    display: none;
+}
+
+.post {
+    margin-top: 1.5rem;
+    position: relative;
+    display: flex;
+    width: 30rem;
+    flex-direction: column;
+    word-wrap: break-word;
+    border-radius: 0.4rem;
+    border: 0.1rem solid rgba(0, 0, 0, 0.09)
+}
+
+.post-header {
+    padding: 1rem 1.25rem;
+    padding-bottom: 0;
+}
+
+.post-footer {
+    padding: 1rem 1.25rem;
+    padding-top: 0;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+}
+
+.avatar-story {
+    padding: 0.4rem;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+
+.smaller-avatar {
+    height: 2.2rem !important;
+    width: 2.2rem !important;
+}
+
+.avatar {
+    height: 3rem;
+    width: 3rem;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.avatar-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.divider {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.profile-name {
+    font-size: 1.1rem;
+    /* font-size: 0.9375rem; */
+}
+
+.profile-name > a {
+    text-decoration: none;
+    color: #14191e;
+    transition: all 0.3s ease-in-out;
+    text-transform: capitalize;
+}
+
+.profile-name > a:hover {
+    color: var(--hover-color);
+}
+
+.small {
+    font-weight: 400;
+    font-size: 0.875em;
+    color: black;
+    opacity: 0.6;
+}
+
+.time-posted::before {
+    content: "•";
+    padding: 0 0.6rem;
+}
+
+.btn {
+    width: 2rem;
+    height: 2rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-soft-hover:hover {
+    background-color: rgba(128, 128, 128, 0.5);
+    border-radius: 0.3rem;
+}
+
+.three-dots::before {
+    display: inline-block;
+    content: "•••";
+    font-size: 1rem;
+    line-height: 1.5;
+    text-transform: none;
+    vertical-align: -0.125em;
+}
+
+.dropdown-menu {
+    position: absolute;
+    z-index: 10;
+    display: none;
+    min-width: 15rem;
+    padding: 1rem 0;
+    font-size: 0.9375rem;
+    text-align: left;
+    list-style: none;
+    background-clip: padding-box;
+    border: 0.1rem solid rgba(0, 0, 0, 0.06);
+    box-shadow: 0px 20px 30px rgb(83 88 93 / 10%), 0px 0px 30px rgb(83 88 93 / 20%);
+}
+
+.dropdown-item:hover {
+    color: var(--hover-color);
+}
+
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 0.4rem 1.2rem;
+    color: #676a79;
+    clear: both;
+    font-weight: 500;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    text-decoration: none;
+    border: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.dropdown-divider {
+    margin: 0.5rem;
+}
+
+.post-body {
+    flex: 1 1 auto;
+    padding: 1.25rem;
+}
+
+.caption {
+    margin-bottom: 1rem;
+}
+
+.post-image {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+    vertical-align: middle;
+    border-radius: 0.4rem;
+}
+
+.post-actions {
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-self: stretch;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.action {
+    margin: 0 0.2rem;
+    display: block;
+    text-decoration: none;
+    transition: all 0.15s ease-in-out;
+}
+
+.share {
+    margin-left: auto;
+}
+
+.action-link {
+    display: flex;
+    align-items: center;
+    color: #14191e;
+    text-decoration: none;
+    transition: all 0.15s ease-in-out;
+}
+
+.action-link:hover {
+    color: var(--hover-color);
+}
+
+.action-link:hover .action-icon {
+    fill: var(--hover-color);
+}
+
+.like-btn, .liked-btn {
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+
+.liked-btn .action-link {
+    color: var(--hover-color);
+}
+
+.liked-btn .action-icon {
+    fill: var(--hover-color);
+}
+
+
+.action-icon {
+    transition: all 0.15s ease-in-out;
+    transform: scale(1.1);
+    margin-right: 0.3rem;
+}
+
+.horizontal-flip {
+    transform: scale(-1.4, 1.4);
+}
+
+.comment-box {
+    width: 100%;
+}
+
+.comment-box-wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.comment {
+    width: 100%;
+    border-radius: 0.4rem;
+    border: 0.1rem solid #e1e4e6;
+}
+
+.comment textarea {
+    resize: none;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    appearance: none;
+    color: #29292e;
+    outline: none;
+    border: none;
+    background-clip: padding-box;
+    background-color: var(--btn-background-color);
+}
+
+.comment-wrap {
+    list-style: none;
+}
+
+.comment-item {
+    margin-bottom: 1rem;
+}
+
+.comment-item-wrap {
+    display: flex;
+    align-items: center;
+}
+
+.comments {
+    padding: 0.7rem;
+    border-radius: 0.4rem;
+    background-color: rgb(249, 182, 250);
+}
+
+.comment-submit {
+    border: none;
+    padding: 0.4rem;
+    cursor: pointer;
+    border-radius: 0.4rem;
+    background-color: rgb(247, 164, 247);
+}
+
+.comment-submit:hover {
+    transform: scale(1.1);
+}
+
+.comment-author {
+    font-weight: 700;
+    color: #14191e;
+    text-decoration: none;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+}
+
+.flex-container {
+    display: flex;
+}

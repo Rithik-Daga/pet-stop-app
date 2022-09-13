@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-color:rgb(248,234,237);
+    --background-color-gradient: linear-gradient(150deg, rgba(248,234,237,1) 35%, rgba(255,198,231,1) 100%);
+    --btn-background-color:rgb(255,250,238);
+    --btn-background-color-gradient: linear-gradient(120deg, rgba(255,250,238,1) 0%, rgba(172,237,237,1) 100%);
+    --btn-padding: 0.6rem;
+    --navbar-background-color: #EAADC6;
+    --hover-color: #0f6fec;
+}
+
+
+body {
+    background: var(--background-color);
+}
+
+#root {
+    height: 100vh;
+    display: flex;
+}
+
+
+/* https://www.schemecolor.com/white-to-pink-gradient.php */

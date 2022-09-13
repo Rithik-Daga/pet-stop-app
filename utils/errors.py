@@ -1,0 +1,2 @@
+class PetProfileLimitError(Exception):
+    pass
