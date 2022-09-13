@@ -4,10 +4,11 @@ import os
 import sys
 
 try:
-    from dotenv import load_dotenv
+    import dotenv
 
-    load_dotenv()
-except ImportError:
+    dotenv.read_dotenv()
+except Exception as e:
+    print("\n\n", e, "\n\n")
     pass
 
 

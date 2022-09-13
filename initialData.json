@@ -3,7 +3,7 @@
     "model": "auth.user",
     "fields": {
         "password": "pbkdf2_sha256$320000$2KGz2wKSLAOMTuxHBD6q2m$noAtf4XpDUOWGrDro7YAn+1CdZMm4KF20ixnJOsc6GI=",
-        "last_login": "2022-09-13T06:16:21.727Z",
+        "last_login": "2022-09-13T06:51:18.996Z",
         "is_superuser": true,
         "username": "rdaga",
         "first_name": "Rithik",
@@ -152,6 +152,14 @@
 },
 {
     "model": "sessions.session",
+    "pk": "bxx2uhjampiyivtck9y2yh0kpjvjqsa6",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2pBhArS4dO8ZCMMMUjU0Ke3KeHdt0oVu_3vvv1RM21rj1mWJE6uzMur0u1HKD2k74Htqt1nnua3LRHpX9EG7vs4sz8vh_h3U1Ou3JkuA3oM1aAGEKDhXrKPAw2gYCjpBgTJk9IwFinc8CjMETxJQgnp_AM0SN9I:1oXzlP:QRAkfyvg5D_9Kw5V1mt-4bHt1YS1b_gQhC_qTLgFrXU",
+        "expire_date": "2022-09-27T06:51:19.002Z"
+    }
+},
+{
+    "model": "sessions.session",
     "pk": "f8zn1lymcye7h5fk1dll2otz3qdleoey",
     "fields": {
         "session_data": ".eJxVjDsOwjAQBe_iGln-xR9Kes4Q7Xq9OIAcKU4qxN0hUgpo38y8lxhhW-u49bKME4mz0OL0uyHkR2k7oDu02yzz3NZlQrkr8qBdXmcqz8vh_h1U6PVbI1nvdcbElPJgokNgpQYk9tGZXJBZpcIheosRrBu00UEFSzGx05DE-wP-7DgQ:1oWVEa:cCT5Pi93WCd2PgqtTQlP9kqBTmRnFCePlAI5e0ZuC3g",
@@ -254,67 +262,6 @@
         "is_active": true,
         "time_created": "2022-09-07T12:17:51.198Z",
         "time_updated": "2022-09-07T12:17:51.198Z"
-    }
-},
-{
-    "model": "users.profileposts",
-    "pk": "9271e81c-ae8f-47dd-91cf-9e02f979c41d",
-    "fields": {
-        "pet_profile": "aac13192-f41a-4319-8c84-a100ef55e2c8",
-        "post": "rdaga/pepper/posts/dogs_1.png",
-        "caption": "My Dogs!!",
-        "like_count": 1,
-        "share_count": 0,
-        "unique_view_count": 0,
-        "time_created": "2022-09-12T07:23:21.202Z"
-    }
-},
-{
-    "model": "users.profileposts",
-    "pk": "ff385867-9f0e-46ff-a833-7c58e08c7ac1",
-    "fields": {
-        "pet_profile": "aac13192-f41a-4319-8c84-a100ef55e2c8",
-        "post": "rdaga/pepper/posts/dogs.png",
-        "caption": "Love!!",
-        "like_count": 1,
-        "share_count": 0,
-        "unique_view_count": 0,
-        "time_created": "2022-09-12T07:23:06.344Z"
-    }
-},
-{
-    "model": "users.postlikeddata",
-    "pk": 15,
-    "fields": {
-        "profile": [
-            "rdaga"
-        ],
-        "post": "ff385867-9f0e-46ff-a833-7c58e08c7ac1",
-        "liked": false
-    }
-},
-{
-    "model": "users.postlikeddata",
-    "pk": 16,
-    "fields": {
-        "profile": [
-            "rdaga"
-        ],
-        "post": "9271e81c-ae8f-47dd-91cf-9e02f979c41d",
-        "liked": false
-    }
-},
-{
-    "model": "community.comments",
-    "pk": 5,
-    "fields": {
-        "user": [
-            "jatin"
-        ],
-        "post": "9271e81c-ae8f-47dd-91cf-9e02f979c41d",
-        "user_comment": "Bitches be bitchin...",
-        "like_count": 0,
-        "time_commented": "2022-09-13T06:17:04.662Z"
     }
 },
 {
@@ -981,6 +928,42 @@
         "object_repr": "Bitches be bitchin...",
         "action_flag": 1,
         "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 38,
+    "fields": {
+        "action_time": "2022-09-13T06:57:45.491Z",
+        "user": [
+            "rdaga"
+        ],
+        "content_type": [
+            "users",
+            "profileposts"
+        ],
+        "object_id": "ff385867-9f0e-46ff-a833-7c58e08c7ac1",
+        "object_repr": "pepper -> ff385867-9f0e-46ff-a833-7c58e08c7ac1",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 39,
+    "fields": {
+        "action_time": "2022-09-13T06:57:45.515Z",
+        "user": [
+            "rdaga"
+        ],
+        "content_type": [
+            "users",
+            "profileposts"
+        ],
+        "object_id": "9271e81c-ae8f-47dd-91cf-9e02f979c41d",
+        "object_repr": "pepper -> 9271e81c-ae8f-47dd-91cf-9e02f979c41d",
+        "action_flag": 3,
+        "change_message": ""
     }
 }
 ]
